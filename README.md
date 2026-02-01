@@ -1,4 +1,4 @@
-# 🚀 IronLadyAI – Spring Boot Backend & Frontend Project
+# 🚀 IronLadyAI – Task1 AI_based Customer Interaction Solution
 
 ## 🎯 Project Objective
 
