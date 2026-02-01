@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iron Lady – Find My Program</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Background image -->
+<img src="background.jpg" id="bg-image" alt="Background image" />
+
+  <!-- Optional floating images -->
+  <img src="icon1.png" class="floating floating-1" alt="icon1">
+  <img src="icon2.png" class="floating floating-2" alt="icon2">
+  <img src="icon3.png" class="floating floating-3" alt="icon3">
+
+  <main class="container">
+    <h1>Find My Program</h1>
+    <p class="subtitle">Answer 3 quick questions to get your personalized recommendation.</p>
+
+    <div id="progress"><div id="progress-bar"></div></div>
+    <div id="loader" class="loader hidden" aria-live="polite" aria-busy="true">Finding your best match…</div>
+
+    <form id="quiz">
+      <section class="step active" data-step="1">
+        <h2>Career Stage</h2>
+        <div class="options">
+          <button type="button" class="card" data-value="starting">🎓 Starting career</button>
+          <button type="button" class="card" data-value="working">💼 Working professional</button>
+          <button type="button" class="card" data-value="mid">🚀 Mid-career</button>
+          <button type="button" class="card" data-value="senior">🏆 Senior/Entrepreneur</button>
+        </div>
+        <div class="nav">
+          <button type="button" id="next-1" class="next" disabled>Next</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="2">
+        <h2>Primary Goal</h2>
+        <div class="options">
+          <button type="button" class="card" data-value="leadership">Leadership skills</button>
+          <button type="button" class="card" data-value="growth">Career growth</button>
+          <button type="button" class="card" data-value="strategic">Break barriers / Strategic thinking</button>
+          <button type="button" class="card" data-value="income">High income / Executive influence</button>
+        </div>
+        <div class="nav">
+          <button type="button" class="back">Back</button>
+          <button type="button" id="next-2" class="next" disabled>Next</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="3">
+        <h2>Key Challenge</h2>
+        <div class="options">
+          <button type="button" class="card" data-value="confidence">Lack of confidence</button>
+          <button type="button" class="card" data-value="politics">Office politics</button>
+          <button type="button" class="card" data-value="stagnation">Career stagnation</button>
+          <button type="button" class="card" data-value="direction">Need strategic direction / network</button>
+        </div>
+        <div class="nav">
+          <button type="button" class="back">Back</button>
+          <button type="submit" class="submit" disabled>See my program</button>
+        </div>
+      </section>
+    </form>
+
+    <section id="result" class="result hidden">
+      <h2 id="courseName"></h2>
+      <p id="reason" class="typing"></p>
+      <ul id="tips" class="tips"></ul>
+      <div class="actions">
+        <button id="restart" class="restart">Start over</button>
+        <a id="explore" class="explore" href="#" target="_blank" rel="noopener">Explore</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
