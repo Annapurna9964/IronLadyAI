@@ -49,3 +49,7 @@ Open Command Prompt and run:
 ```bash
 java -version
 mvn -version
+C:\Users\Annapurna\Downloads\IronLady\backend
+mvn clean install
+mvn spring-boot:run
+ctrl c
